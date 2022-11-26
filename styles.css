@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+    
+  }
+
+/* HEADER  */
+
+header {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: left;
+}
+
+.nav-bar h1 {
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.nav-bar h4 {
+    padding-left: 15px;
+    padding-top: 28px;
+
+}
+
+.nav-bar {
+    display: flexbox;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding-right: 20px;
+}
+
+a.menu-items {
+    text-decoration: none;
+
+}
+
+.searchForm { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap; 
+  padding-bottom: 20px;
+}
+
+#searchInput {
+    font-size: 18px;
+    border-radius: 6px 0 0 6px;
+    border: solid 1px black;
+}
+
+#searchBtn {
+    background-color: #f7ca06d5;
+    font-size: 17px;
+    border-radius: 0 10px 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+background-color: beige;
+height: auto;
+min-height: 400px;
+   
+}
+
+/* Buttons  */
+.button{
+	background-color:#f7ca06d5;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.button:hover{
+	background-color: transparent;
+	border: 2px solid #0c0c0c;
+	cursor: pointer;
+    color: black;
+}
+
+.first-section-button-container {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+#first-section-button {
+    font-size: 25px;
+}
+
+
+/* Welcome Navigation */
+.welcome-navigation {
+display: grid;
+place-items: center;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+
+
+
+.section-title {
+    text-align: center;
+    background-color: beige;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+    /*First Section  */
+
+
+            /* CARDS */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: beige;
+    padding-bottom: 30px;
+}
+
+            /* Card - each card container */
+.cards-container .card {
+    border: black solid 1px;
+} 
+
+.cards-container .card:hover {
+    opacity: 0.2;
+}
+
+
+                    /* CARD - upper section */
+.card img {
+display: flex;
+justify-content: center;
+
+}
+
+
+
+                    /* Card HOOVER -- NEEDS WORKS*/
+
+
+
+
+
+
+
+
+
+/* Second Navigation */
+#second-section-cards-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+/* Third Navigation: item details */
+.third-navigation-container {
+    /* display: grid;
+    place-items: center;
+     */
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.arrow {
+    font-size: 50px;
+    padding-right: 25px;
+}
+
+.arrow:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.cardDetails {
+    border: solid 1px black;
+    border-radius: 0 0 35px 35px;
+    
+}
+
+.card-lower-section-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.card-element-one, .card-element-two, .card-element-three {
+    display: grid;
+    place-items: center;
+}
+
+
+/* Upload Section - Form */
+
+.upload-section-container {
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+   padding-top: 30px;
+   padding-left: 15px;
+   padding-right: 15px;
+   background-color: rgb(170, 165, 65);
+   border-radius: 30px;
+}
+
+#form-button-container {
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.info-sent {
+    font-size: 50px;
+    padding-top: 5px;
+}
+
+
+/* About Section */
+.about-us-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 40px;
+    font-size: larger;
+}
+
+.about-us-text-container {
+    /* display: grid;
+    place-items: center; */
+    display: flexbox;
+    padding-top: 40px;
+}
+
+.about-us-text-container h3, h2, h4 {
+text-align: right;
+}
+
+.img-about-us-container {
+    /* display: grid;
+    place-items: center; */
+}
+
+#img-about-us {
+    max-width: 250px;
+    padding-left: 20px;
+    border-radius: 30px;
+ 
+}
+
+footer {
+    padding-top:40px ; 
+    padding-bottom: 70px;
+    background-color: yellow;
+    display: grid;
+    justify-content: center;
+   
+}
+
+.footer div p {
+    display: grid;
+    justify-content: center;
+}
+
+.inactive {
+    display: none;
+}
